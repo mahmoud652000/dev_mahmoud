@@ -2,7 +2,7 @@ export const myProjects = [
   {
     projectTitle: "Smart School Manager",
     category: ["react"],
-    imgPath: "/public/images/img1.PNG",
+    imgPath: "public/images/img1.PNG",
     demoLink: "https://mahmoud652000.github.io/Smart-School-Manager/",
     codeLink: "https://github.com/mahmoud652000/Smart-School-Manager",
     description:
