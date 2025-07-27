@@ -11,7 +11,7 @@ export const myProjects = [
   {
     projectTitle: "Smart live",
     category: ["react", "css"],
-    imgPath: "/public/images/img2.PNG",
+    imgPath: "./images/img2.PNG",
     demoLink: "https://mahmoud652000.github.io/star_life/",
     codeLink: "https://github.com/mahmoud652000/star_life",
     description:
@@ -20,7 +20,7 @@ export const myProjects = [
   {
     projectTitle: "wapchat",
     category: ["node"],
-    imgPath: "/public/images/img3.PNG",
+    imgPath: "./images/img3.PNG",
     demoLink: "https://mahmoud652000.github.io/wapchat/",
     codeLink: "https://github.com/mahmoud652000/wapchat",
     description:
@@ -29,14 +29,14 @@ export const myProjects = [
   {
     projectTitle: "RedStore",
     category: [ "css"],
-    imgPath: "/public/images/img7.PNG",
+    imgPath: "./images/img7.PNG",
     demoLink:"https://mahmoud652000.github.io/RedStore/",
     codeLink:"https://github.com/mahmoud652000/RedStore",
     description:"RedStore is a sleek and modern online shoe store offering trendy, comfortable footwear for all. Discover our latest collections and enjoy a seamless shopping experience."
 
 
   },
-  { projectTitle: "test-py-repo", category: ["react"], imgPath: "/public/images/img10.PNG",
+  { projectTitle: "test-py-repo", category: ["react"], imgPath: "./images/img10.PNG",
     demoLink:"https://mahmoud652000.github.io/test-py-repo/",
     codeLink:"https://github.com/mahmoud652000/test-py-repo",
     description:"This is an investment website for companies. My role in this project was focused solely on designing the user interface (UI) and the overall look and feel of the site"
@@ -48,7 +48,7 @@ export const myProjects = [
   {
     projectTitle: "👁️🦅 Horus View",
     category: ["js"],
-    imgPath: "/public/images/img6.PNG",
+    imgPath: "./images/img6.PNG",
       demoLink:"https://mahmoud652000.github.io/Horus/",
       codeLink:"https://github.com/mahmoud652000/Horus",
       description:" Horus is a digital journey through Ancient Egypt’s most iconic landmarks. Discover the secrets of the pharaohs, timeless temples, and majestic pyramids — all in one place"
@@ -57,7 +57,7 @@ export const myProjects = [
   {
     projectTitle: "website world",
     category: ["node"],
-    imgPath: "/public/images/img8.PNG",
+    imgPath: "./images/img8.PNG",
     demoLink:"https://mahmoud652000.github.io/website-world/",
     codeLink:"https://github.com/mahmoud652000/website-world",
     description:"A modern, responsive multi-language website template featuring dark mode support, dynamic content translation, interactive countdown timer, skill progress bars, and smooth UI animations. Built with vanilla JavaScript, HTML, and CSS, suitable for personal portfolios, corporate landing pages, or event promotions"
@@ -66,7 +66,7 @@ export const myProjects = [
   {
     projectTitle: "E-Book-Site",
     category: ["html,css"],
-    imgPath: "/public/images/img9.PNG",
+    imgPath: "./images/img9.PNG",
     demoLink:"https://mahmoud652000.github.io/03.E-Book-Site/",
     codeLink:"https://github.com/mahmoud652000/03.E-Book-Site",
     description:"A comprehensive online bookstore offering a seamless shopping experience for all types of books. Features clear categories, detailed product pages, and a responsive design compatible with all devices. Easily browse and purchase both digital and physical books securely."
@@ -75,7 +75,7 @@ export const myProjects = [
   {
     projectTitle: "Text-to-Speech-Converter",
     category: ["js"],
-    imgPath: "/public/images/img11.PNG",
+    imgPath: "./images/img11.PNG",
     demoLink:"https://mahmoud652000.github.io/Text-to-Speech-Converter/",
     codeLink:"https://github.com/mahmoud652000/Text-to-Speech-Converter",
        description:     "A website that converts written text into high-quality, natural-sounding speech. It helps users listen to content instead of reading it, supporting multiple languages and voice options with an easy-to-use interface suitable for everyone."
