@@ -1,33 +1,44 @@
 /* ========================
  table of contents
 ===========================
-1. Left Section ==> Buttons
-2. Right Section ==> Card
-3- Responsive Design (media query)*/
+1. Section Header
+2. Left Section (Filters)
+3. Right Section (Cards)
+4. Card Details
+5. Responsive
+================================= */
 
 main.flex {
   gap: 2.64rem;
   align-items: start;
+  scroll-margin-top: 2rem;
+}
+
+main .projects-header {
+  margin-bottom: 2rem;
 }
 
 /* ===============================
-   1. Left Section ==> Buttons
+   1. Left Section (Filters)
 ================================== */
 main section.left-section.flex {
   flex-direction: column;
   gap: 10px;
+  position: sticky;
+  top: 1rem;
 }
 
 main section.left-section.flex button {
-  background-color: rgba(36, 37, 46, 1);
+  background-color: var(--card-bg);
   width: 11rem;
   padding: 0.75rem 0;
   text-align: center;
   font-size: 1.05rem;
   text-transform: capitalize;
   opacity: 0.5;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: 0.3s;
+  border: 1px solid var(--border);
 }
 
 main section.left-section.flex button:hover {
@@ -40,66 +51,103 @@ main section.left-section.flex button.active {
   letter-spacing: 0.6px;
   padding: 0.8rem 0;
   border: 1px solid var(--blue);
+  background: rgba(93, 188, 252, 0.08);
 }
 
 .light main section.left-section.flex button.active {
-  border: 1px solid #000;
+  border: 1px solid var(--blue);
 }
 
 /* ===============================
-   2. Right Section ==> Card
+   2. Right Section (Cards)
 ================================== */
-
 main section.right-section.flex {
   flex-grow: 1;
   justify-content: center;
   flex-wrap: wrap;
-
   column-gap: 16px;
   row-gap: 2rem;
 }
 
 .card {
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(93, 188, 252, 0.3);
-  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
   transition: 0.3s;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.05),
     rgba(255, 255, 255, 0.05)
   );
+  overflow: hidden;
 }
 
-.light .card,
-.light .card:hover {
-  border: none;
+.light .card {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0.01)
+  );
 }
 
 .card:hover {
   border: 1px solid var(--blue);
-  /* background-color: rgba(246, 246, 246); */
-  rotate: 1deg;
-  scale: 1.01;
+  box-shadow: 0 12px 40px rgba(93, 188, 252, 0.2);
+  scale: 1.03;
   cursor: pointer;
 }
 
 .card img {
-  border-radius: 5px;
+  border-radius: 12px 12px 0 0;
+  display: block;
 }
 
 .card .box {
-  padding: 1rem 0.4rem;
+  padding: 1rem 0.6rem;
+}
+
+/* ===============================
+   3. Card Header & Tags
+================================== */
+.card .card-header {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card .box .title {
   color: var(--title);
   text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card .card-date {
+  font-size: 0.7rem;
+  color: var(--blue);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.card .tech-tags {
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.card .tech-tag {
+  background: rgba(93, 188, 252, 0.1);
+  color: var(--blue);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 .card .box .sub-title {
   color: var(--subtitle);
-  font-size: 0.8rem;
-  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.1rem;
 }
 
@@ -111,12 +159,13 @@ main section.right-section.flex {
 .card .icon-link {
   font-size: 1.2rem;
   color: var(--subtitle);
+  transition: 0.3s;
 }
 
 .card .icon-github:hover,
 .card .icon-link:hover {
-  font-size: 1.25rem;
-  color: var(--icon-hover);
+  font-size: 1.3rem;
+  color: var(--blue);
   cursor: pointer;
 }
 
@@ -124,12 +173,16 @@ main section.right-section.flex {
   font-size: 0.9rem;
   color: var(--blue);
   margin-right: 12px;
+  transition: 0.3s;
+}
+
+.card a.link:hover {
+  gap: 5px;
 }
 
 /* =====================================
-  3- Responsive Design (media query)
+  5. Responsive
 ======================================== */
-
 @media (max-width: 600px) {
   main.flex {
     flex-direction: column;
@@ -142,6 +195,7 @@ main section.right-section.flex {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    position: static;
   }
 
   main section.left-section.flex button {

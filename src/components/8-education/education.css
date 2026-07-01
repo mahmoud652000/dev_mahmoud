@@ -1,0 +1,126 @@
+section.education-section {
+  scroll-margin-top: 2rem;
+}
+
+section.education-section .education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+section.education-section .education-card,
+section.education-section .languages-card {
+  padding: 2rem;
+}
+
+section.education-section .education-card:hover,
+section.education-section .languages-card:hover {
+  transform: translateY(-4px);
+}
+
+section.education-section .edu-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section.education-section .edu-degree {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--title);
+  margin-bottom: 0.4rem;
+  line-height: 1.5rem;
+}
+
+section.education-section .edu-institution {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+section.education-section .edu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+section.education-section .edu-row {
+  justify-content: space-between;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section.education-section .edu-row:last-child {
+  border-bottom: none;
+}
+
+section.education-section .edu-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+section.education-section .edu-value {
+  color: var(--title);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+section.education-section .grade-badge {
+  background: rgba(93, 188, 252, 0.1);
+  color: var(--blue);
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Languages Card */
+section.education-section .lang-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--title);
+  margin-bottom: 1.5rem;
+}
+
+section.education-section .lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.education-section .lang-header {
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+section.education-section .lang-name {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+section.education-section .lang-level {
+  color: var(--subtitle);
+  font-size: 0.85rem;
+}
+
+section.education-section .lang-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--card-bg);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+section.education-section .lang-progress {
+  height: 100%;
+  background: var(--gradient);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  section.education-section .education-grid {
+    grid-template-columns: 1fr;
+  }
+}

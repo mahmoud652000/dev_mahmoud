@@ -1,0 +1,125 @@
+section.experience-section {
+  scroll-margin-top: 2rem;
+}
+
+section.experience-section .timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+section.experience-section .timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gradient);
+  opacity: 0.3;
+  border-radius: 1px;
+}
+
+section.experience-section .timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+section.experience-section .timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gradient);
+  border: 3px solid var(--secondary);
+  box-shadow: 0 0 0 2px var(--blue);
+}
+
+section.experience-section .timeline-content {
+  padding: 1.5rem;
+}
+
+section.experience-section .timeline-content:hover {
+  transform: translateX(4px);
+}
+
+section.experience-section .timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+section.experience-section .job-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--title);
+}
+
+section.experience-section .job-period {
+  font-size: 0.8rem;
+  color: var(--blue);
+  font-weight: 600;
+  background: rgba(93, 188, 252, 0.1);
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+section.experience-section .job-company {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+section.experience-section .company-name {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+section.experience-section .company-separator {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+section.experience-section .company-type,
+section.experience-section .company-location {
+  color: var(--subtitle);
+  font-size: 0.85rem;
+}
+
+section.experience-section .achievements {
+  list-style: none;
+  padding: 0;
+}
+
+section.experience-section .achievement-item {
+  position: relative;
+  padding-left: 1.3rem;
+  color: var(--subtitle);
+  font-size: 0.88rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+section.experience-section .achievement-item::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  section.experience-section .timeline-header {
+    flex-direction: column;
+  }
+
+  section.experience-section .job-role {
+    font-size: 1rem;
+  }
+}

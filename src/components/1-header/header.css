@@ -28,15 +28,44 @@ header ul.flex {
 
 header ul li a {
   color: var(--title);
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: 0.88rem;
   font-weight: 500;
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+header ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: var(--blue);
+  transition: width 0.3s ease;
 }
 
 header ul li a:hover {
+  opacity: 1;
+}
+
+header ul li a.dash-link {
+  background: rgba(93, 188, 252, 0.1);
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  padding: 0.25rem 0.7rem;
+  border-radius: 8px;
   color: var(--blue);
   opacity: 1;
-  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+header ul li a.dash-link::after {
+  display: none;
+}
+
+header ul li a.dash-link:hover {
+  background: rgba(93, 188, 252, 0.2);
 }
 
 header button {
